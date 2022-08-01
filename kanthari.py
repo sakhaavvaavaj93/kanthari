@@ -114,14 +114,14 @@ async def skip_current_song(chat_id):
             Q = chat_queue[1][5]
             thumb = chat_queue[1][6]
             if type == "Video":
-            if Q == "high":
-              hm = HighQualityVideo()
-            elif Q == "mid":
-              hm = MediumQualityVideo()
-            elif Q == "low":
-              hm = LowQualityVideo()
-          else:
-              hm = MediumQualityVideo()
+              if Q == "high":
+                  hm = HighQualityVideo()
+              elif Q == "mid":
+                  hm = MediumQualityVideo()
+              elif Q == "low":
+                  hm = LowQualityVideo()
+              else:
+                  hm = MediumQualityVideo()
               await app.change_stream(
                     chat_id, AudioVideoPiped(playlink, HighQualityAudio(), hm)
                 )
