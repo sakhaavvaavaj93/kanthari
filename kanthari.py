@@ -113,7 +113,7 @@ async def skip_current_song(chat_id):
             type = chat_queue[1][4]
             Q = chat_queue[1][5]
             thumb = chat_queue[1][6]
-            elif type == "Video":
+                if type == "Video":
                 if Q == "high":
                     hm = HighQualityVideo()
                 elif Q == "mid":
