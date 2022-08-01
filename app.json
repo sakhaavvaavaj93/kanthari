@@ -1,0 +1,36 @@
+{
+  "name": "കാന്താരി",
+  "description": "A Telegram Bot to play videos in telegram videochats.",
+  "keywords": ["music", "voicechat", "telegram"],
+  "logo": "https://telegra.ph/file/957271e04efe643804199.jpg",
+  "repository": "https://github.com/sakhaavvaavaj93/kanthari",
+  "stack": "container",
+  "env": {
+    "SESSION_NAME": {
+      "description": "Pyrogram String Session of assistant account.",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "A bot token from @BotFather",
+      "required": true
+    },
+    "API_ID": {
+      "description": "API_ID from my.telegram.org/apps",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "API_HASH from my.telegram.org/apps",
+      "required": true
+    },
+    "SUPPORT": {
+      "description": "Username of the chat where users will go and disturb you.(without @)",
+      "required": true,
+      "value": "kk_kovilakam"
+    },
+    "OWNER_ID": {
+      "description": "Your Telegram ID",
+      "required": true,
+      "value": "5423253221"
+    }
+  }
+}
